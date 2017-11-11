@@ -35,6 +35,7 @@ gem 'ckeditor', '~> 4.1'
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'rails-html-sanitizer'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

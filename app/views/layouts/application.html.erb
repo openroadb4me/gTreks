@@ -3,17 +3,40 @@
   <head>
     <title>GTreks</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <%= render "layouts/navigation" %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <div class="container-fluid">
-      <%= yield %>
+    <div id="main-container" class="container">
+      <div class="row">
+        <div class="col-xs-3">
+          <h3>About gTreks</h3>
+          <img src="/images/1220.jpg" width="100%">
+          <p>gTreks is a side project of Nathan Anderson of
+          <a href="http://www.openroadbeforeme.com" ref="_blank">The Open Road Before Me</a>
+          and is an effort to catalogue treks and hikes throughout the country of Georgia.</p>
+          <div class="social-icons">
+             <div class="col-xs-3" align="left">
+               <a href="http://www.facebook.com/openroadbeforeme" target="_blank"><img src="/images/facebook.jpg" width="100%"></a>
+             </div>
+             <div class="col-xs-3" align="left">
+               <a href="http://www.instagram.com/openroadb4me" target="_blank"><img src="/images/instagram.jpg" width="100%"></a>
+             </div>
+             <div class="col-xs-3" align="left">
+               <a href="http://www.twitter.com/openroadb4me" target="_blank"><img src="/images/twitter.jpg" width="100%"></a>
+             </div>
+             <div class="col-xs-3" align="left">
+               <a href="http://www.linkedin.com/in/nataanderson" target="_blank"><img src="/images/linkedin.jpg" width="100%"></a>
+             </div>
+           </div>
+        </div>
+        <div class="col-xs-9">
+          <%= yield %>
+        </div>
+      </div>
     </div>
   </body>
 </html>

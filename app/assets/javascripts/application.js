@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require ckeditor/init
 //= require bootstrap-sprockets
 //= require turbolinks
-//= require ckeditor/init
 //= require_tree .

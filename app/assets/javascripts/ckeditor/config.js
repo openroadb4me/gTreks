@@ -1,3 +1,4 @@
+CKEDITOR.timestamp = '76SDJ77D';
 CKEDITOR.editorConfig = function(config) {
   config.language = 'en';
   config.width = '100%';

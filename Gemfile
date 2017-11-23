@@ -14,6 +14,7 @@ gem 'pg', group: :production
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # gem 'webpacker'
+gem 'therubyracer'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'rails_12factor'
